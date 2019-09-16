@@ -1,7 +1,7 @@
 16# Get Start with PYNQ-Z2 on Windows
 Official website: http://www.pynq.io/ 
 Comparison: 
-![Alt text](./1565060273307.png)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060273307.png)
 *Source： http://www.pynq.io/board
 ## Prerequisites
 - Supported browser (Chrome)
@@ -14,7 +14,7 @@ The boot image on http://www.pynq.io/board.html is not available. Instead, we ca
 If we want to use the image file of Z1 on Z2, the audio system would not work. But the others may work with minor code change:
 
 
-![Alt text](./1565060364170.png)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060364170.png)
 *Source： http://www.pynq.io/board
 After downloading, write the unzipped image into the MicroSD card with win32Diskimager( https://sourceforge.net/projects/win32diskimager)
 
@@ -25,7 +25,7 @@ After downloading, write the unzipped image into the MicroSD card with win32Disk
 4.  Set the power jumper on USB and power pynq-z1 via Micro USB cable
 5.  Turn on the power switch
 6.  Wait for a while ... 
-![Alt text](./IMG_8591.JPG)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8591.JPG)
 ## Connecting to Jupyter Notebook
 password: xilinx
 ### via Router
@@ -37,11 +37,11 @@ Set the static ip address as 192.168.2.x where x is 0-255 (excluding 99, as this
 
 We can see the jupyter notebook in the browser and there are several folders.
 
-![Alt text](./1565060484455.png)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060484455.png)
 
 ## LED test 
 Open *board_btns_leds.ipynb* in *base>board* and run the code.
-![Alt text](./1565060548514.png)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060548514.png)
 It will take some time to import BaseOverlay.
 
 ```python
@@ -99,7 +99,7 @@ Now, we want LED4 and LED5 be turned on with different colors.  Therefore, the c
         base.rgbleds[5].write(color2)
         sleep(Delay1)
 ```
-![Alt text](./IMG_8594.JPG)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8594.JPG)
 
 BRAVO! 
 It is quite convenient to perform hardware design with python! Once the logical parts (PL)  have been well-designed, we can use python on a jupyter notebook to combine PL and PS to test our ideas.  
@@ -109,7 +109,7 @@ Maybe the *LED test*  is not so attractive. We want to explore more.
 Therefore, open *opencv_face_detect_hdmi.ipynb* in *base>video*  to perform face  detection.
 An HDMI input source and HDMI output monitor are required for this code.
 
-![Alt text](./IMG_8595.JPG)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8595.JPG)
 In this test, the algorithm is completed with the help of  *cv2* and *numpy*. 
 ```python
 import cv2
@@ -143,6 +143,6 @@ hdmi_out.writeframe(frame)
 Finally, the monitor is turned on through HDMI. However, Clark Gregg is not detected possibly because of the sunglass. 
 Obviously, this algorithm cannot reach the standard of S.H.I.E.L.D. .
 
-#![Alt text](./IMG_8600.JPG)
+#![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8600.JPG)
 # Summary
 The examples above are completed by calling the FPGA interface in PL. However, the algorithms are still running on the ARM core. If better performance is desired,  the algorithm can be designed and accelerated with HDL.
