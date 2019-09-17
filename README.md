@@ -1,8 +1,8 @@
 # Get Start with PYNQ-Z2 on Windows
-Official website: http://www.pynq.io/ 
+* Official website: http://www.pynq.io/ 
 Comparison: 
 ![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060273307.png)
-*Source： http://www.pynq.io/board
+* Source： http://www.pynq.io/board
 ## Prerequisites
 - Supported browser (Chrome)
 - Ethernet cable (connect with a computer)
@@ -15,7 +15,7 @@ If we want to use the image file of Z1 on Z2, the audio system would not work. B
 
 
 ![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/1565060364170.png)
-*Source： http://www.pynq.io/board
+* Source： http://www.pynq.io/board
 After downloading, write the unzipped image into the MicroSD card with win32Diskimager( https://sourceforge.net/projects/win32diskimager)
 
 ## Hardware setting
@@ -137,12 +137,12 @@ FPGA is utilized to get access to peripheral equipments, such as display the ima
 hdmi_out.writeframe(frame)
 ```
 
-*The screenshot happens too fast for us to switch the picture. So we use  **time.sleep(10)** to delay **hdmi_in.readframe()**.
-
+* The screenshot happens too fast for us to switch the picture. So we use  **time.sleep(10)** to delay **hdmi_in.readframe()**.
 
 Finally, the monitor is turned on through HDMI. However, Clark Gregg is not detected possibly because of the sunglass. 
 Obviously, this algorithm cannot reach the standard of S.H.I.E.L.D. .
 
-#![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8600.JPG)
+![Alt text](https://github.com/SeeedDocument/PYNQ-Z2-board---based-on-Xilinx-Zynq-C7Z020-SoC/raw/master/img/IMG_8600.JPG)
+
 # Summary
 The examples above are completed by calling the FPGA interface in PL. However, the algorithms are still running on the ARM core. If better performance is desired,  the algorithm can be designed and accelerated with HDL.
